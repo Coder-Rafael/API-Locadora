@@ -22,7 +22,6 @@ public class CarService {
     CarRepository repository;
 
     public CarModel saveCar(CarRegisterDTO dto){
-        System.out.println("aqui o fdp:"+dto.getNome());
         CarModel car = new CarModel(dto);
         repository.save(car);
         return car;
